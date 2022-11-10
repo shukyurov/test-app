@@ -1,0 +1,14 @@
+<div class="m-2 pr-2">
+    <h2>{{ pageTitle }}</h2>
+    <form [formGroup]="form">
+        <input [formControl]="form.controls.firstName" class="form-control m-2" placeholder="Firstname">
+        <input [formControl]="form.controls.lastName" class="form-control m-2" placeholder="Lastname">
+        <input [formControl]="form.controls.email" class="form-control m-2" placeholder="Email">
+    </form>
+
+
+    <div class="d-flex justify-content-center">
+        <button class="btn btn-light mr-1" (click)="activeModal.dismiss()">Cancel</button>
+        <button class="btn btn-success" (click)="save()">Save</button>
+    </div>
+</div>
